@@ -15,4 +15,4 @@ function rockPaperScissors(input) {
   }
 ```
 
-This is an algorithm because it uses an if statement, selection, to determine whether rock, paper, or scissors was used
+This is an algorithm because it uses an if statement, selection, to determine whether rock, paper, or scissors will be used and it uses a for loop to match the random variable with an output.
