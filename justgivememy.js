@@ -12,15 +12,24 @@ function stillcode(thosewhoknow) {
   }
   return fein;
 }
-console.log(stillcode("11111111"));
+//console.log(stillcode("11111111"));
 
 function justgivememybi(nary) {
   let bi = "";
-  for (i = 8; i > -1; i --){
-    if ((nary % (Math.pow(2,i))) = 0 ){
+
+  for (i = 8; i > -1; i--) {
+    let whalen = nary % Math.pow(2, i);
+    console.log(nary, whalen, Math.pow(2, i));
+    if (whalen != nary) {
       bi += "1";
+      nary = nary - Math.pow(2, i);
+      console.log(nary);
+    } else if (bi.split("").length > 0) {
+      bi += "0";
     }
   }
+
   return bi;
 }
-console.log(justgivememybi(11));
+console.log(stillcode("110110"));
+console.log(justgivememybi(45));
